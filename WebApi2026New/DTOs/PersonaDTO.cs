@@ -21,6 +21,13 @@
 
     }
 
+    public class PersonaUpdateDTO
+    {
+        public string nombre { get; set; } = string.Empty;
+        public string apellido { get; set; } = string.Empty;
+        public int edad { get; set; }
+    }
+
     public class PersonaReadDTO
     {
         public int idPersona { get; set; }
