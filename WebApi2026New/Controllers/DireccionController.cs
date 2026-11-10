@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebApi2026New.Data;
 using WebApi2026New.DTOs;
@@ -6,6 +7,7 @@ using WebApi2026New.Models;
 
 [Route("api/[controller]")]
 [ApiController]
+[Authorize]
 public class DireccionesController : ControllerBase
 {
     private readonly AppDBContext _context;
